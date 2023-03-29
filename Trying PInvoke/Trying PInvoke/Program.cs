@@ -30,7 +30,7 @@ namespace Trying_PInvoke
                 result = await client.GetFromJsonAsync<ClassyClass>(endpoint);
             }
             MessageBox(IntPtr.Zero, result.ToString(), "Results", 0);
-            StreamWriter sr = new StreamWriter("C:\\Users\\Dominylas\\Desktop\\SWSR\\Whatever.txt");
+            StreamWriter sr = new StreamWriter(""); //enter the file path for the .txt file
             sr.Write(result.ToString());
             sr.Close();
             Console.ReadKey();
